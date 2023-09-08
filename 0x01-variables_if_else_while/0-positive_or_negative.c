@@ -6,6 +6,7 @@
  * main - A program that prints random numbers
  * Return (0) Success
  */
+
 int main(void)
 {
 	int n;
