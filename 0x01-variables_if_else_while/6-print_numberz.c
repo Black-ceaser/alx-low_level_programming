@@ -13,8 +13,8 @@ int main(void)
 
 	do {
 		putchar(number + '0');
-		putchar('\n');
 		number++;
 	} while (number <= 9);
+	putchar('\n');
 	return (0);
 }
