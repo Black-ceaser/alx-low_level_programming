@@ -3,6 +3,7 @@
 /**
  * main - Patience, persistence and perspiration
  *  make an unbeatable combination for success
+ *  Return: (0)Success
  */
 
 int main(void)
