@@ -15,7 +15,6 @@ int main(void)
 		putchar(number + '0');
 		putchar('\n');
 		number++;
-	}
-	while (number <= 9);
-	return 0;
+	} while (number <= 9);
+	return (0);
 }
