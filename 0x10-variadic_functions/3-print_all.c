@@ -8,12 +8,17 @@
 void print_all(const char * const format, ...)
 {
 	int i = 0;
-	char *str, *sep = "";
+	char *str = "";
 
 	va_list list;
+	const char *sep = "";
 
 	va_start(list, format);
-
+	if (format == NULL)
+	{
+		printf("\n");
+		return ;
+	}
 	if (format)
 	{
 		while (format[i])
@@ -36,7 +41,7 @@ void print_all(const char * const format, ...)
 					i++;
 					continue;
 				}
-			sep = ",";
+			sep = ", ";
 			i++;
 		}
 	}
