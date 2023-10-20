@@ -3,7 +3,7 @@
 #include "lists.h"
 /**
  * print_list - prints elements in a list
- * *h: pointer for list_t
+ * @h: pointer for list_t
  * Return: number of nodes
  */
 size_t print_list(const list_t *h)
