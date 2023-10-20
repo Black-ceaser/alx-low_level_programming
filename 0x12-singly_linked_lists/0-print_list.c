@@ -19,7 +19,7 @@ size_t print_list(const list_t *h)
 		}
 		else
 		{
-			printf("[%u]%s\n", curr->len, curr->str);
+			printf("[%u] %s\n", curr->len, curr->str);
 		}
 		nodec++;
 		curr = curr->next;
