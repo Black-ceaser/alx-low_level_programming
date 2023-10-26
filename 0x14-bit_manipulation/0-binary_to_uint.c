@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * bianry_to_uint - converts a binary to an unsigned int
+ * binary_to_uint - converts a binary to an unsigned int
  * @b: pointer to the number
  * Return: result
  */
