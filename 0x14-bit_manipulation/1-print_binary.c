@@ -8,13 +8,13 @@
  */
 unsigned long int _pow(unsigned int base, unsigned int power)
 {
-	unsigned long int num;
+	unsigned long int result;
 	unsigned int i;
 
-	num = 1;
+	result = 1;
 	for (i = 1; i <= power; i++)
-		num *=base;
-	return (num);
+		result *= base;
+	return (result);
 }
 
 /**
@@ -28,7 +28,7 @@ void print_binary(unsigned long int n)
 	char flag;
 
 	flag = 0;
-	divisor = _pow(2, sizedof(unsigned long int) * 8 - 1);
+	divisor = _pow(2, sizeof(unsigned long int) * 8 - 1);
 	while (divisor != 0)
 	{
 		check = n & divisor;
@@ -37,9 +37,9 @@ void print_binary(unsigned long int n)
 			flag = 1;
 			_putchar('1');
 		}
-		ele if (flag == 1 || divisor == 1)
+		else if (flag == 1 || divisor == 1)
 		{
-			_putcahr('0');
+			_putchar('0');
 		}
 		divisor >>= 1;
 	}
